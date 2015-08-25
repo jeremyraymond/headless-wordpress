@@ -23,7 +23,7 @@ function transfer_db_page() {
 add_action( 'admin_init', 'transfer_db_settings' );
 
 function transfer_db_settings() {
-	register_setting( 'transfer-db-settings-group', 'accountant_name' );
-	register_setting( 'transfer-db-settings-group', 'accountant_phone' );
-	register_setting( 'transfer-db-settings-group', 'accountant_email' );
+	register_setting( 'transfer-db-settings-group', 'db_name' );
+	register_setting( 'transfer-db-settings-group', 'db_user' );
+	register_setting( 'transfer-db-settings-group', 'db_pass' );
 }
