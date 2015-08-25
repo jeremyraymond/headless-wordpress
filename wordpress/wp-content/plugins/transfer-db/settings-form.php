@@ -6,6 +6,11 @@
     <?php do_settings_sections( 'transfer-db-settings-group' ); ?>
     <table class="form-table">
         <tr valign="top">
+        <th scope="row">Database Host</th>
+        <td><input type="text" name="db_host" value="<?php echo esc_attr( get_option('db_host') ); ?>" /></td>
+        </tr>
+
+        <tr valign="top">
         <th scope="row">Database Name</th>
         <td><input type="text" name="db_name" value="<?php echo esc_attr( get_option('db_name') ); ?>" /></td>
         </tr>
