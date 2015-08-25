@@ -25,5 +25,5 @@ function transfer_db_settings() {
 	register_setting( 'transfer-db-settings-group', 'db_host' );
 	register_setting( 'transfer-db-settings-group', 'db_name' );
 	register_setting( 'transfer-db-settings-group', 'db_user' );
-	register_setting( 'transfer-db-settings-group', 'db_pass' );
+	register_setting( 'transfer-db-settings-group', 'db_password' );
 }

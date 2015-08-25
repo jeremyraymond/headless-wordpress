@@ -1,3 +1,4 @@
+<?php include 'process-transfer.php'; ?>
 <div class="wrap">
 <h2>Transfer DB Details</h2>
 
@@ -28,5 +29,13 @@
     
     <?php submit_button(); ?>
 
+</form>
+<form method="post" action="">
+    <input type="hidden" name="db_host" value="<?php echo esc_attr( get_option('db_host') ); ?>" />
+    <input type="hidden" name="db_name" value="<?php echo esc_attr( get_option('db_name') ); ?>" />
+    <input type="hidden" name="db_user" value="<?php echo esc_attr( get_option('db_user') ); ?>" />
+    <input type="hidden" name="db_password" value="<?php echo esc_attr( get_option('db_password') ); ?>" />
+
+    <?php submit_button("Transfer"); ?>
 </form>
 </div>
