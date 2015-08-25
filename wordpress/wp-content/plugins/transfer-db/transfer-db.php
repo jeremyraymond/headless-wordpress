@@ -15,9 +15,8 @@ function transfer_db_menu() {
 	add_submenu_page( 'tools.php', 'Transfer DB', 'Transfer DB', 'administrator', 'transfer-db', 'transfer_db_page' );
 }
 
-function transfer_db_page() {
-	$path = dirname();
-	include $path . 'settings-form.php';
+function transfer_db_page() {	
+	include 'settings-form.php';
 }
 
 add_action( 'admin_init', 'transfer_db_settings' );
